@@ -1,0 +1,6 @@
+[Unit]
+Description=SpeedTest
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c "/usr/local/bin/speedtest-cli --csv >> /usr/src/app/mnt/logging/speedtest.csv"
